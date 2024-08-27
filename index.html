@@ -11,6 +11,33 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+      sm: "350px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      // xl: "1280px",
+      // // => @media (min-width: 1280px) { ... }
+
+      // "2xl": "1536px",
+      // // => @media (min-width: 1536px) { ... }
+    },
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <header
@@ -21,23 +48,37 @@
     </header>
 
     <!-- Slider main container -->
-    <div class="swiper">
+    <div class="swiper w-full sm:h-[500px] md:h-[700px]">
       <div class="swiper-wrapper">
         <div class="swiper-slide relative">
-          <img src="./Assets/food4_s1.jpg" alt="img1" />
+          <img src="./Assets/food4_s1.jpg" class="h-full w-full" alt="img1" />
           <div class="absolute top-[50%] left-[20%] transform translate-y-[-50%] translate-x-[-20%]">
-            <p class="text-[18px] font-[400] italic text-[#253237]">100% ORGANIC</p>
+            <p class="md:text-[18px] sm:text-[10px] font-[400] italic text-[#253237] ">100% ORGANIC</p>
             <p class="text-[48px] font-[400] text-[#253237]">Live Organic</p>
-            <p class="text-[48px] font-[700] text-[#253237]">For Live Healthy</p>
-            <p class="text-[18px] font-[400] text-[#253237]">A great Virety of Store Juice and Fruit</p>
-            <button class="bg-[#54ab00] text-[14px] text-white px-7 py-3 rounded-full">SHOP NOW</button>
+            <p class="text-[48px] font-[700] text-[#253237] mb-3">For Live Healthy</p>
+            <p class="md:text-[18px] sm:text-[10px] font-[400] text-[#253237]">A great Virety of Store Juice and Fruit</p>
+            <button class="bg-[#54ab00] text-[14px] text-white px-7 py-3 rounded-full mt-4">SHOP NOW</button>
           </div>
         </div>
         <div class="swiper-slide">
-          <img src="./Assets/food4_s2.jpg" alt="" />
+          <img src="./Assets/food4_s2.jpg" class="h-full w-full" alt="" />
+          <div class="absolute top-[50%] left-[20%] transform translate-y-[-50%] translate-x-[-20%]">
+            <p class="text-[18px] font-[400] italic text-[#253237] ">100% ORGANIC</p>
+            <p class="text-[48px] font-[400] text-[#253237]">Live Organic</p>
+            <p class="text-[48px] font-[700] text-[#253237] mb-3">For Live Healthy</p>
+            <p class="text-[18px] font-[400] text-[#253237]">A great Virety of Store Juice and Fruit</p>
+            <button class="bg-[#54ab00] text-[14px] text-white px-7 py-3 rounded-full mt-4">SHOP NOW</button>
+          </div>
         </div>
         <div class="swiper-slide">
-          <img src="./Assets/food4_s3.jpg" alt="" />
+          <img src="./Assets/food4_s3.jpg" class="h-full w-full" alt="" />
+          <div class="absolute top-[50%] left-[20%] transform translate-y-[-50%] translate-x-[-20%]">
+            <p class="text-[18px] font-[400] italic text-[#253237] ">100% ORGANIC</p>
+            <p class="text-[48px] font-[400] text-[#253237]">Live Organic</p>
+            <p class="text-[48px] font-[700] text-[#253237] mb-3">For Live Healthy</p>
+            <p class="text-[18px] font-[400] text-[#253237]">A great Virety of Store Juice and Fruit</p>
+            <button class="bg-[#54ab00] text-[14px] text-white px-7 py-3 rounded-full mt-4">SHOP NOW</button>
+          </div>
         </div>
       </div>
       <div class="swiper-pagination"></div>
