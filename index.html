@@ -1,41 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Loop</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            screens: {
-      sm: "350px",
-      // => @media (min-width: 640px) { ... }
+    
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header
+      class="flex justify-around bg-white text-[1rem] font-[400] text-gray-600 p-2"
+    >
+      <p>Welcome you to Ecolife store!</p>
+      <p>Sign In | Register | Pkr</p>
+    </header>
 
-      md: "768px",
-      // => @media (min-width: 768px) { ... }
+    <!-- Slider main container -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide relative">
+          <img src="./Assets/food4_s1.jpg" alt="img1" />
+          <div class="absolute top-[50%] left-[20%] transform translate-y-[-50%] translate-x-[-20%]">
+            <p class="text-[18px] font-[400] italic text-[#253237]">100% ORGANIC</p>
+            <p class="text-[48px] font-[400] text-[#253237]">Live Organic</p>
+            <p class="text-[48px] font-[700] text-[#253237]">For Live Healthy</p>
+            <p class="text-[18px] font-[400] text-[#253237]">A great Virety of Store Juice and Fruit</p>
+            <button class="bg-[#54ab00] text-[14px] text-white px-7 py-3 rounded-full">SHOP NOW</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./Assets/food4_s2.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./Assets/food4_s3.jpg" alt="" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
 
-      lg: "1024px",
-      // => @media (min-width: 1024px) { ... }
-
-      // xl: "1280px",
-      // // => @media (min-width: 1280px) { ... }
-
-      // "2xl": "1536px",
-      // // => @media (min-width: 1536px) { ... }
-    },
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
-</head>
-<body>
-    <div>
-        <p class="text-red-600 text-center text-xl font-bold">Hi</p>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+    direction: "horizontal",
+    loop: true,
+
+    pagination: false,
+
+    scrollbar: false,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+    </script>
+  </body>
 </html>
