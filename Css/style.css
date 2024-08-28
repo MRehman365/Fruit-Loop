@@ -4,3 +4,19 @@ body{
     margin: 0;
     padding: 0;
 }
+.price-section:hover .cart-section{
+    top: 0;
+}
+.price-section:hover .price{
+    visibility: hidden;
+    transform: translateY(100%);
+}
+.price:hover{
+    transition: 0.6s;
+}
+.price-section{
+    transition: 1s;
+}
+.delay{
+    transition: 0.5s;
+}
