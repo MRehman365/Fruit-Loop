@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fruit Loop</title>
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="./Css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fruit Loop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="./Css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script>
-      tailwind.config = {
-        theme: {
-          screens: {
-            sm: "300px",
-            // => @media (min-width: 640px) { ... }
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          sm: "300px",
+          // => @media (min-width: 640px) { ... }
 
-            md: "768px",
-            // => @media (min-width: 768px) { ... }
+          md: "768px",
+          // => @media (min-width: 768px) { ... }
 
-            lg: "1024px",
-            // => @media (min-width: 1024px) { ... }
+          lg: "1024px",
+          // => @media (min-width: 1024px) { ... }
 
-            xl: "1280px",
-            // // => @media (min-width: 1280px) { ... }
+          xl: "1280px",
+          // // => @media (min-width: 1280px) { ... }
 
-            // "2xl": "1536px",
-            // // => @media (min-width: 1536px) { ... }
-          },
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
+          // "2xl": "1536px",
+          // // => @media (min-width: 1536px) { ... }
+        },
+        extend: {
+          colors: {
+            clifford: "#da373d",
           },
         },
-      };
-    </script>
-  </head>
+      },
+    };
+  </script>
+</head>
 
   <body>
     <header
@@ -121,32 +119,37 @@
     </div>
   </div>
   <!-- responsive -->
-    <div class="collection mx-auto sm:p-2 md:p-6 mt-16 xl:max-w-screen-lg xl:mx-auto xl:container">
-      <h1 class="text-[14px] font-bold text-center text-[#54ab00] tracking-[0.2rem]">Awesome Shop</h1>
-      <h2 class="text-[32px] font-bold text-center text-[#253237]">Popular Collection</h2>
-      <div class="grid grid-cols-1 gap-6 mt-6 md:grid-cols-4 md:gap-[16px]">
-        <div class="md:row-span-2 md:col-span-2 overflow-hidden relative">
-          <img src="Assets/food2_3.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-          <div class="absolute bottom-0 left-0 p-5 text-white text-xl font-bold">Watermelon</div>
-        </div>
-        <div class="overflow-hidden relative">
-          <img src="Assets/food2_4.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-          <div class="absolute bottom-0 left-0 p-5 text-white text-xl font-bold">Garlic</div>
-        </div>
-        <div class="overflow-hidden relative">
-          <img src="Assets/food2_6.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-          <div class="absolute bottom-0 left-0 p-5 text-white text-xl font-bold">Cabbage</div>
-        </div>
-        <div class="overflow-hidden relative">
-          <img src="Assets/food2_5.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-          <div class="absolute bottom-0 left-0 p-5 text-white text-xl font-bold">Jiuce</div>
-        </div>
-        <div class="overflow-hidden relative"> 
-          <img src="Assets/food2_7.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-          <div class="absolute bottom-0 left-0 p-5 text-white text-xl font-bold">Lemon</div>
-        </div>
+  <div class="collection mx-auto sm:p-2 md:p-6 mt-16 xl:max-w-screen-lg xl:mx-auto xl:container">
+    <h1 class="text-[14px] font-bold text-center text-[#54ab00] tracking-[0.2rem]">Awesome Shop</h1>
+    <h2 class="text-[32px] font-bold text-center text-[#253237]">Popular Collection</h2>
+    <div class="grid grid-cols-1 gap-6 mt-6 md:grid-cols-4 md:gap-[16px]">
+      <div class="md:row-span-2 md:col-span-2 overflow-hidden relative">
+        <img src="Assets/food2_3.jpg" alt=""
+          class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        <div class="absolute bottom-0 left-0 p-5 text-white text-xl font-bold">Watermelon</div>
+      </div>
+      <div class="overflow-hidden relative">
+        <img src="Assets/food2_4.jpg" alt=""
+          class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        <div class="absolute bottom-0 left-0 p-5 text-white text-xl font-bold">Garlic</div>
+      </div>
+      <div class="overflow-hidden relative">
+        <img src="Assets/food2_6.jpg" alt=""
+          class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        <div class="absolute bottom-0 left-0 p-5 text-white text-xl font-bold">Cabbage</div>
+      </div>
+      <div class="overflow-hidden relative">
+        <img src="Assets/food2_5.jpg" alt=""
+          class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        <div class="absolute bottom-0 left-0 p-5 text-white text-xl font-bold">Jiuce</div>
+      </div>
+      <div class="overflow-hidden relative">
+        <img src="Assets/food2_7.jpg" alt=""
+          class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+        <div class="absolute bottom-0 left-0 p-5 text-white text-xl font-bold">Lemon</div>
       </div>
     </div>
+  </div>
 
   <!-- Products -->
   <div class=" md:container mx-auto sm:p-4 md:p-6 mt-6">
@@ -421,22 +424,77 @@
           </div>
         </div>
       </div>
-      </div>
-      </div>
-
-
-
-
-    <!-- banner -->
-    <div class="relative w-full sm:h-[400px] md:h-[600px] sm:mt-[4rem] md:mt-[8rem]">
-      <img src="./Assets/food4_1.jpg" class="h-[100%] w-full object-cover sm:object-bottom md:object-center" alt="lahsen">
-      <div class="absolute sm:flex md:block flex-col sm:items-center md:items-left top-[50%] sm:left-[50%] md:left-[10%] sm:w-full md:w-[500px] transform translate-y-[-50%] sm:translate-x-[-50%] md:translate-x-[-10%]">
-        <h2 class="sm:text-[30px] sm:text-center md:text-left md:text-[50px] font-bold text-white m-0">Organic Juice</h2>
-        <h2 class="sm:text-[30px] sm:text-center md:text-left md:text-[50px] font-bold text-white m-0">Natural Fresh Juice</h2>
-        <p class="mt-2 text-[15px] text-white sm:text-center md:text-left">Made of 100% Valencia oranges to hold a perfect balance of sweet and tart flavor. This juice is made most enjoyable by the absence of the pulp!</p>
-        <button class="bg-white mt-5 px-6 py-3 text-[14px] text-black rounded-full">DISCOVER NOW</button>
-      </div>
     </div>
+  </div>
+
+
+
+
+  <!-- banner -->
+  <div class="relative w-full sm:h-[400px] md:h-[600px] sm:mt-[4rem] md:mt-[8rem]">
+    <img src="./Assets/food4_1.jpg" class="h-[100%] w-full object-cover sm:object-bottom md:object-center" alt="lahsen">
+    <div
+      class="absolute sm:flex md:block flex-col sm:items-center md:items-left top-[50%] sm:left-[50%] md:left-[10%] sm:w-full md:w-[500px] transform translate-y-[-50%] sm:translate-x-[-50%] md:translate-x-[-10%]">
+      <h2 class="sm:text-[30px] sm:text-center md:text-left md:text-[50px] font-bold text-white m-0">Organic Juice</h2>
+      <h2 class="sm:text-[30px] sm:text-center md:text-left md:text-[50px] font-bold text-white m-0">Natural Fresh Juice
+      </h2>
+      <p class="mt-2 text-[15px] text-white sm:text-center md:text-left">Made of 100% Valencia oranges to hold a perfect
+        balance of sweet and tart flavor. This juice is made most enjoyable by the absence of the pulp!</p>
+      <button class="bg-white mt-5 px-6 py-3 text-[14px] text-black rounded-full">DISCOVER NOW</button>
+    </div>
+  </div>
+
+  <!-- logos -->
+  <div class="container mx-auto mt-16">
+    <div
+      class="grid gap-4 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 md:border md:border-gray-200 rounded-lg md:mx-20 md:p-4">
+      <div class="overflow-hidden">
+        <img class="transition-transform duration-500 hover:scale-110" src="Assets/1 (1).jpg" alt="">
+      </div>
+      <div class="overflow-hidden">
+        <img class="transition-transform duration-500 hover:scale-110" src="Assets/2 (1).jpg" alt="">
+      </div>
+      <div class="overflow-hidden">
+        <img class="transition-transform duration-500 hover:scale-110" src="Assets/3.jpg" alt="">
+      </div>
+      <div class="overflow-hidden">
+        <img class="transition-transform duration-500 hover:scale-110" src="Assets/4.jpg" alt="">
+      </div>
+      <div class="overflow-hidden">
+        <img class="transition-transform duration-500 hover:scale-110" src="Assets/5.jpg" alt="">
+      </div>
+      <div class="overflow-hidden">
+        <img class="transition-transform duration-500 hover:scale-110" src="Assets/6.jpg" alt="">
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!--Last food items-->
+  <div
+    class="swiper-container grid grid-cols-2 gap-4 overflow-x-scroll md:grid-cols-4 lg:grid-cols-6 w-auto mt-16 relative">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide overflow-hidden"><img class="transition-transform duration-500 hover:scale-110"
+          src="Assets/food_i1.jpg" alt=""></div>
+      <div class="swiper-slide overflow-hidden"><img class="transition-transform duration-500 hover:scale-110"
+          src="Assets/food_i2.jpg" alt=""></div>
+      <div class="swiper-slide overflow-hidden"><img class="transition-transform duration-500 hover:scale-110"
+          src="Assets/food_i3.jpg" alt=""></div>
+      <div class="swiper-slide overflow-hidden"><img class="transition-transform duration-500 hover:scale-110"
+          src="Assets/food_i4.jpg" alt=""></div>
+      <div class="swiper-slide overflow-hidden"><img class="transition-transform duration-500 hover:scale-110"
+          src="Assets/food_i5.jpg" alt=""></div>
+      <div class="swiper-slide overflow-hidden"><img class="transition-transform duration-500 hover:scale-110"
+          src="Assets/food_i6.jpg" alt=""></div>
+    </div>
+  </div>
+
+
+
+
+
 
     <!-- New Products -->
     <div class=" md:container mx-auto sm:p-4 md:p-6 mt-6">
@@ -720,13 +778,29 @@
   pagination: false,
   scrollbar: false,
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
 
+    const swiper1 = new Swiper('.swiper-container', {
+      slidesPerView: 2,
+      spaceBetween: 16,
+      loop: true,
+      breakpoints: {
+        300: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        1024: {
+          slidesPerView: 6,
+        },
+      }
+      });
+  </script>
+</body>
 
-    </script>
-  </body>
 </html>
