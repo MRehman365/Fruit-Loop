@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script>
       tailwind.config = {
         theme: {
@@ -42,10 +43,10 @@
 
   <body>
     <header
-      class="sm:hidden md:flex justify-around bg-white text-[1rem] font-[400] text-gray-600 p-2"
+      class="sm:hidden md:flex justify-around font-[400] text-gray-600 p-2"
     >
-      <p>Welcome you to Ecolife store!</p>
-      <p>Sign In | Register | Pkr</p>
+      <p class="text-[14px] text-gray-600">Welcome you to Ecolife store!</p>
+      <p class="text-[14px] text-gray-600">Sign In | Register | Pkr</p>
     </header>
 
 
@@ -91,8 +92,9 @@
     </div>
     <div class="swiper-pagination"></div>
 
-    <div class="swiper-button-prev text-[#54ab00]"></div>
-    <div class="swiper-button-next text-[#54ab00]"></div>
+    <div class="swiper-button-prev hidden"></div>
+    <div class="swiper-button-next hidden"></div>
+    
   </div>
   <!-- promotion -->
   <div
@@ -577,24 +579,154 @@
         </div>
         </div>
         </div>
+
+        <!-- Hot Categories -->
+        <div class=" md:container mx-auto sm:p-4 md:p-6 mt-6">
+          <h1 class="text-[14px] font-bold text-center text-[#54ab00] tracking-[0.2rem]">Awesome Shop</h1>
+          <h2 class="text-[32px] font-bold text-center text-[#253237]">Hot Categories</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            <div class="flex">
+              <div><img src="./Assets//82_thumb.jpg" alt=""></div>
+              <div class="flex flex-col gap-[10px] px-4">
+                <h3 class="text-[16px] font-[700] hover:text-[#54ac00] transition-all">Fruit & Vagitable</h3>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Fresh Vagitable </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Nuts & Seeds </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Fresh Vagitable </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Snacks </p>
+              </div>
+            </div>
+            <div class="flex">
+              <div><img src="./Assets//83_thumb.jpg" alt=""></div>
+              <div class="flex flex-col gap-[10px] px-4">
+                <h3 class="text-[16px] font-[700] hover:text-[#54ac00] transition-all">Bread & Bakery</h3>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Glutent Free </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Cake & Desert </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Salty Pastry </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Loose Bread </p>
+              </div>
+            </div>
+            <div class="flex">
+              <div><img src="./Assets//84_thumb.jpg" alt=""></div>
+              <div class="flex flex-col gap-[10px] px-4">
+                <h3 class="text-[16px] font-[700] hover:text-[#54ac00] transition-all">Meat & SeaFood</h3>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Beaf </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Chicken </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Sea Food </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Frozen Meat </p>
+              </div>
+            </div>
+            <div class="flex">
+              <div><img src="./Assets//85_thumb.jpg" alt=""></div>
+              <div class="flex flex-col gap-[10px] px-4">
+                <h3 class="text-[16px] font-[700] hover:text-[#54ac00] transition-all">Frozen Food</h3>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Ice Cream </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Pizza </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Beak Fast Food </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Snacks </p>
+              </div>
+            </div>
+            <div class="flex">
+              <div><img src="./Assets//86_thumb.jpg" alt=""></div>
+              <div class="flex flex-col gap-[10px] px-4">
+                <h3 class="text-[16px] font-[700] hover:text-[#54ac00] transition-all">Dairy & Eggs</h3>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Eggs </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Milk </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Yougert </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Cheez </p>
+              </div>
+            </div>
+            <div class="flex">
+              <div><img src="./Assets//87_thumb.jpg" alt=""></div>
+              <div class="flex flex-col gap-[10px] px-4">
+                <h3 class="text-[16px] font-[700] hover:text-[#54ac00] transition-all">Fruit Juice</h3>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Mango Jiuce </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Apple Juice </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Strawberries Juice </p>
+                <p class="text-[14px] font-[400] text-gray-500 hover:text-[#54ac00] hover:ml-[5px] duration-500 transition-all">Milk Shakes </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Title -->
+         <div class="flex sm:flex-col md:flex-row w-full bg-[#54ab00] p-3 center gap-[20px] md:gap-[30%] justify-center items-center">
+          
+          <div>
+            <h2 class="text-[35px] font-bold text-white">Fruit Loop</h2>
+            <p class="text-center text-white">Awesome Shop</p>
+          </div>
+          <div class="flex items-center space-x-4">
+            <a href="https://www.facebook.com" target="_blank" class="flex items-center justify-center w-10 h-10 bg-white rounded-full hover:bg-black text-black hover:text-white">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="flex items-center justify-center w-10 h-10 bg-white rounded-full hover:bg-black text-black hover:text-white">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="flex items-center justify-center w-10 h-10 bg-white rounded-full hover:bg-black text-black hover:text-white">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="flex items-center justify-center w-10 h-10 bg-white rounded-full hover:bg-black text-black hover:text-white">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        
+         </div>
+
+        <!-- Contact Info -->
+         <div class="container mx-auto sm:gap-[30px] md:gap-[0px] flex sm:flex-col md:flex-row md:justify-between mt-5">
+          <div class="flex gap-2">
+            <img src="./Assets/food_icon_map.png" class="size-[29px] h-[33px] mt-1" alt="">
+            <div class="">
+              <p class="text-[16px] font-bold">
+                4710-4890 Breckinridge St, USK</p>
+                <p class="text-[13px] text-gray-500">Contact Info!</p>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <img src="./Assets/food_icon_mail.png" class="size-[29px] h-[33px] mt-1" alt="">
+            <div class="">
+              <p class="text-[16px] font-bold">
+                demo@posthemes.com</p>
+                <p class="text-[13px] text-gray-500">Orders Support!</p>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <img src="./Assets/food_icon_phone.png" class="size-[29px] h-[33px] mt-1" alt="">
+            <div class="">
+              <p class="text-[16px] font-bold">
+                
++1 (123) 888 9999, +1 (678) 777 8888</p>
+                <p class="text-[13px] text-gray-500">Free support line!</p>
+            </div>
+          </div>
+         </div>
+         <!-- copyright -->
+         <div class="bg-gray-100 py-3 mt-5 text-[13px] text-gray-600 text-center">
+          Copyright © MindLoop. All Rights Reserved.
+         </div>
     
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./Js/Script.js"></script>
     <script>
-      const swiper = new Swiper(".swiper", {
-        direction: "horizontal",
-        loop: true,
+  const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
+  loop: true,
+  
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  
+  pagination: false,
+  scrollbar: false,
 
-        pagination: false,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
-        scrollbar: false,
 
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
     </script>
   </body>
 </html>
