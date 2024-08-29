@@ -20,3 +20,10 @@ body{
 .delay{
     transition: 0.5s;
 }
+
+  .swiper-button-prev.sbp,
+  .swiper-button-next.sbn {
+    width: 5px; /* Adjust width as needed */
+    height: 5px; /* Adjust height as needed */
+    background-size: 100% 100%; /* Ensure the image scales correctly */
+  }
